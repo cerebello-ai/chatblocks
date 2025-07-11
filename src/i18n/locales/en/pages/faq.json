@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "FAQs - Scalar",
+    "description": "Frequently asked questions about Scalar CMS"
+  },
+  "title": "FAQs",
+  "categories": {
+    "developers": "Developers",
+    "contentEditingWorkflow": "Content Editing & Workflow",
+    "cloudHosting": "Cloud & Hosting",
+    "communitySupport": "Community & Support"
+  },
+  "faqs": {
+    "developers": [
+      {
+        "question": "How do I install Scalar CMS in my project?",
+        "answer": "You can install Scalar with a single CLI command. It supports popular frameworks like Next.js, Nuxt, SvelteKit, and more. Use our official SDK or connect directly to the GraphQL API. See the Quickstart Guide for full details.",
+        "linkText": "Quickstart Guide"
+      },
+      {
+        "question": "Is Scalar open source?",
+        "answer": "Yes, Scalar is fully open source under the MIT license. You can view, modify, and contribute to the codebase on GitHub. Our cloud offering provides additional enterprise features, but the core CMS is free to use."
+      },
+      {
+        "question": "What API types does Scalar support?",
+        "answer": "Scalar provides both GraphQL and REST APIs. The GraphQL API offers a flexible query language with strong typing, while the REST API provides simple HTTP endpoints for common operations. Both APIs are fully documented with SDKs available in multiple languages."
+      },
+      {
+        "question": "Can I define content models with code?",
+        "answer": "Yes, Scalar supports code-first content modeling. You can define your schemas using TypeScript, allowing for version control and type safety. This approach works well with CI/CD pipelines and makes it easy to maintain consistent content structures across environments."
+      }
+    ],
+    "contentEditingWorkflow": [
+      {
+        "question": "Can I create custom content workflows?",
+        "answer": "Yes, Scalar allows you to define custom workflows for content creation, review, and publishing. You can set up multiple stages with granular permissions for different team members."
+      },
+      {
+        "question": "Does Scalar support real-time collaboration?",
+        "answer": "Yes, our Cloud plan includes real-time collaboration features, allowing multiple team members to work on content simultaneously with live updates and conflict resolution."
+      }
+    ],
+    "cloudHosting": [
+      {
+        "question": "What are the differences between self-hosted and cloud?",
+        "answer": "The self-hosted version gives you complete control over your infrastructure but requires you to manage hosting, backups, and scaling. The Cloud version is fully managed with additional features like real-time collaboration, role-based access controls, and built-in CDN."
+      },
+      {
+        "question": "Can I migrate from self-hosted to cloud later?",
+        "answer": "Yes, we provide migration tools to easily transfer your content and settings from a self-hosted Scalar instance to our cloud platform."
+      }
+    ],
+    "communitySupport": [
+      {
+        "question": "Where can I get help with Scalar?",
+        "answer": "For the open-source version, we have an active community on Discord and GitHub. Cloud customers receive email support and access to our knowledge base. Enterprise plans include dedicated support channels and SLAs."
+      },
+      {
+        "question": "How can I contribute to Scalar?",
+        "answer": "We welcome contributions! You can contribute code, report bugs, suggest features, or help improve our documentation. Check our GitHub repository for contribution guidelines."
+      }
+    ]
+  }
+}

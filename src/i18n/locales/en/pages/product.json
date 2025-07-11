@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "title": "Product - Scalar",
+    "description": "Discover Scalar's code-first approach to content management. Define models in code, sync to UI seamlessly."
+  },
+  "hero": {
+    "title": "Code-first models",
+    "description": "Define models in code. Sync them seamlessly to Scalar's UI.",
+    "startTrial": "Start Free Trial",
+    "viewGithub": "View on GitHub",
+    "imageAlt": "Code-first models interface"
+  },
+  "features": {
+    "trackChanges": {
+      "title": "Track Changes",
+      "description": "GitHub Integration",
+      "subDescription": "Scalar's GitHub Sync lets you track model changes like any other code. Collaborate on schema changes just like features or fixes."
+    },
+    "localDevelopment": {
+      "title": "Local Development",
+      "description": "Develop locally. Push globally",
+      "subDescription": "With npx scalar dev, your local environment becomes the control hub. Work offline, iterate rapidly, and push when you're ready."
+    },
+    "modelDefinitions": {
+      "title": "Model Definitions",
+      "description": "Define once, use everywhere content",
+      "subDescription": "Write once in code. Scalar reflects it in the admin panel immediately."
+    },
+    "readyToScale": {
+      "title": "Ready to Scale",
+      "description": "Code-first, but never code-only",
+      "subDescription": "Your teammates can still use the visual UI. Scalar lets devs code, and non-devs manage content with equal ease."
+    }
+  },
+  "compatibility": {
+    "title": "Real-time Sync",
+    "description": "Sync instantly to the UI",
+    "tabs": {
+      "modelDefinition": "Model Definition",
+      "formComponent": "Form Component",
+      "articleList": "Article List",
+      "singleArticleView": "Single Article View",
+      "apiRoutes": "API Routes",
+      "dataFetching": "Data Fetching"
+    },
+    "ui": {
+      "loading": "Loading...",
+      "copyCode": "Copy code",
+      "articleTitle": "Article title",
+      "articleContent": "Article content",
+      "saveArticle": "Save Article",
+      "featured": "Featured",
+      "articleNotFound": "Article not found",
+      "featuredArticle": "Featured Article",
+      "failedToFetch": "Failed to fetch articles:"
+    }
+  },
+  "cta": {
+    "title": "Start building with code-first models",
+    "readDocs": "Read the Docs"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "title": "Blog - Scalar",
+    "description": "Latest news, updates, and insights from the Scalar team"
+  },
+  "title": "Blog",
+  "categories": {
+    "allPosts": "All Posts",
+    "community": "Community",
+    "product": "Product",
+    "guides": "Guides",
+    "changelog": "Changelog"
+  },
+  "loadMore": "Show More Posts",
+  "loading": "Loading...",
+  "postCount": "Showing {visible} of {total} posts",
+  "noPostsFound": "No posts found for this category."
+}

@@ -1,15 +1,15 @@
 import { FileCode, GitCommit, MonitorSpeaker, Zap } from 'lucide-react';
 import Image from 'next/image';
 
+import type { ProductFeaturesProps } from '@/i18n/types';
 import { cn } from '@/lib/utils';
 
-const features = [
+const getFeatures = (props: ProductFeaturesProps) => [
   {
     icon: GitCommit,
-    title: 'Track Changes',
-    description: 'GitHub Integration',
-    subDescription:
-      "Scalar's GitHub Sync lets you track model changes like any other code. Collaborate on schema changes just like features or fixes.",
+    title: props.trackChanges.title,
+    description: props.trackChanges.description,
+    subDescription: props.trackChanges.subDescription,
     className: '',
     images: [
       {
@@ -23,10 +23,9 @@ const features = [
   },
   {
     icon: MonitorSpeaker,
-    title: 'Local Development',
-    description: 'Develop locally. Push globally',
-    subDescription:
-      "With npx scalar dev, your local environment becomes the control hub. Work offline, iterate rapidly, and push when you're ready.",
+    title: props.localDevelopment.title,
+    description: props.localDevelopment.description,
+    subDescription: props.localDevelopment.subDescription,
     className: '',
     images: [
       {
@@ -40,10 +39,9 @@ const features = [
   },
   {
     icon: FileCode,
-    title: 'Model Definitions',
-    description: 'Define once, use everywhere content',
-    subDescription:
-      'Write once in code. Scalar reflects it in the admin panel immediately.',
+    title: props.modelDefinitions.title,
+    description: props.modelDefinitions.description,
+    subDescription: props.modelDefinitions.subDescription,
     images: [
       {
         src: '/images/product/feature-3-1.webp',
@@ -63,10 +61,9 @@ const features = [
   },
   {
     icon: Zap,
-    title: 'Ready to Scale',
-    description: 'Code-first, but never code-only',
-    subDescription:
-      'Your teammates can still use the visual UI. Scalar lets devs code, and non-devs manage content with equal ease.',
+    title: props.readyToScale.title,
+    description: props.readyToScale.description,
+    subDescription: props.readyToScale.subDescription,
     images: [
       {
         src: '/images/product/feature-4-1.webp',
@@ -114,7 +111,9 @@ const features = [
   },
 ];
 
-export function ProductFeatures() {
+export function ProductFeatures(props: ProductFeaturesProps) {
+  const features = getFeatures(props);
+  
   return (
     <section className="container">
       <div className="grid grid-cols-1 border border-t-0 md:grid-cols-2">

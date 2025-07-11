@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "About Us - Scalar",
+    "description": "Built for developers, backed by community. Learn more about Scalar and our mission to revolutionize content management."
+  },
+  "hero": {
+    "title": "Built for developers, Backed by community",
+    "description": "Scalar is the open content platform that puts speed, control, and freedom in your hands — without giving up collaboration or scale.",
+    "discordText": "Join our Discord",
+    "githubText": "Star on GitHub"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "We're building the future of content management",
+    "content": "At Scalar, we believe that content management should be fast, flexible, and developer-friendly. Our mission is to provide teams with the tools they need to create, manage, and scale content without compromising on speed or flexibility.",
+    "values": [
+      {
+        "title": "Developer First",
+        "description": "Built with developers in mind, featuring modern APIs and workflows."
+      },
+      {
+        "title": "Open Source",
+        "description": "Transparent, community-driven development with open source at our core."
+      },
+      {
+        "title": "Performance",
+        "description": "Lightning-fast content delivery and management experiences."
+      },
+      {
+        "title": "Flexibility",
+        "description": "Adaptable to any workflow, tech stack, or content strategy."
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet the Team",
+    "description": "The people behind Scalar",
+    "hiring": "We're hiring!",
+    "members": [
+      {
+        "name": "Alex Johnson",
+        "role": "Co-founder & CEO",
+        "bio": "Former engineering lead at major tech companies, passionate about developer tools.",
+        "avatar": "/images/team/alex.jpg"
+      },
+      {
+        "name": "Maria Garcia",
+        "role": "Co-founder & CTO",
+        "bio": "Full-stack developer with expertise in scalable content systems.",
+        "avatar": "/images/team/maria.jpg"
+      },
+      {
+        "name": "David Kim",
+        "role": "Lead Frontend Developer",
+        "bio": "UI/UX expert focused on creating exceptional user experiences.",
+        "avatar": "/images/team/david.jpg"
+      }
+    ]
+  },
+  "investors": {
+    "title": "Investors & Contributors",
+    "description": "Backed by industry leaders and open source contributors",
+    "content": "We're proud to be supported by leading investors who believe in our vision of making content management better for everyone."
+  },
+  "testimonials": {
+    "title": "What People Are Saying",
+    "subtitle": "Feedback from our community",
+    "items": [
+      {
+        "content": "Scalar has completely changed how we approach content management. The API-first design is exactly what we needed.",
+        "author": "Jennifer Liu",
+        "role": "Engineering Manager at CloudTech",
+        "avatar": "/images/testimonials/jennifer.jpg"
+      },
+      {
+        "content": "Finally, a CMS that doesn't get in the way of development. The developer experience is phenomenal.",
+        "author": "Robert Wilson",
+        "role": "Senior Developer at WebFlow",
+        "avatar": "/images/testimonials/robert.jpg"
+      }
+    ]
+  }
+}

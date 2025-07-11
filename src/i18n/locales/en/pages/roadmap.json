@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Roadmap - Scalar",
+    "description": "Track our progress and upcoming features."
+  },
+  "title": "Roadmap",
+  "statuses": {
+    "all": "All",
+    "inProgress": "In Progress",
+    "planned": "Planned",
+    "shipped": "Shipped"
+  },
+  "roadmapItems": [
+    {
+      "status": "In Progress",
+      "title": "Live preview editing",
+      "description": "Let content editors preview their changes in real-time within the CMS editor.",
+      "date": "Beta by May 2025",
+      "team": {
+        "name": "Core Team"
+      }
+    },
+    {
+      "status": "In Progress",
+      "title": "SvelteKit plugin",
+      "description": "First-class Scalar support for SvelteKit via a plugin.",
+      "date": "Q2 2025",
+      "team": {
+        "name": "Core Team"
+      }
+    },
+    {
+      "status": "Planned",
+      "title": "API tokens with granular scopes",
+      "description": "Create multiple tokens with read/write/scope-level permissions for teams and external services.",
+      "date": "Q3 2025",
+      "team": {
+        "name": "Yassine Zaanouni"
+      }
+    },
+    {
+      "status": "Planned",
+      "title": "Image editor field type",
+      "description": "Add support for cropping, aspect ratios, alt-text, and focal point control in media uploads.",
+      "date": "Q3 2025",
+      "team": {
+        "name": "Fedir Davydov"
+      }
+    },
+    {
+      "status": "Shipped",
+      "title": "Code-first schema sync",
+      "description": "Use TypeScript or JSON schema files to define content structure, sync to the UI automatically.",
+      "date": "April 2025",
+      "team": {
+        "name": "Rob Austin"
+      }
+    },
+    {
+      "status": "Shipped",
+      "title": "GitHub integration (beta)",
+      "description": "Push/pull content and schema changes via GitHub. Ideal for content versioning and CI workflows.",
+      "date": "March 2025",
+      "team": {
+        "name": "Core Team"
+      }
+    },
+    {
+      "status": "Shipped",
+      "title": "Full-text search API",
+      "description": "A robust, built-in full-text search endpoint for your content — supports filters, relevance scoring, and language-aware stemming.",
+      "date": "February 2025",
+      "team": {
+        "name": "Rob Austin"
+      }
+    },
+    {
+      "status": "Shipped",
+      "title": "Custom field components",
+      "description": "Support for embedding custom React/Vue/Svelte components as field editors — perfect for things like color pickers, map selectors, or signature pads.",
+      "date": "January 2025",
+      "team": {
+        "name": "Core Team"
+      }
+    }
+  ],
+  "communityEngagement": {
+    "title": "Community engagement",
+    "description": "We build in public. Want to request something or upvote a feature? Join the conversation on:",
+    "githubDiscussions": "Github Discussions",
+    "discord": "Discord"
+  }
+}

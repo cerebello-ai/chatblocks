@@ -1,0 +1,15 @@
+{
+  "loading": "Cargando...",
+  "error": "Error",
+  "retry": "Reintentar",
+  "cancel": "Cancelar",
+  "save": "Guardar",
+  "continue": "Continuar",
+  "back": "Atrás",
+  "next": "Siguiente",
+  "previous": "Anterior",
+  "close": "Cerrar",
+  "submit": "Enviar",
+  "search": "Buscar",
+  "language": "Idioma"
+}

@@ -6,10 +6,19 @@ import Link from 'next/link';
 import { FaDiscord } from 'react-icons/fa6';
 
 import { Button } from '@/components/ui/button';
+import { LocalizedLink } from '@/components/ui/localized-link';
 import { MovingBorder } from '@/components/ui/moving-border';
+import type { HeroProps } from '@/i18n/types';
 import { cn } from '@/lib/utils';
 
-export function Hero() {
+export function Hero({ 
+  betaBanner, 
+  title, 
+  description, 
+  startTrial, 
+  community, 
+  imageAlt 
+}: HeroProps) {
   return (
     <section className="">
       <div className="container">
@@ -33,30 +42,27 @@ export function Hero() {
                 size="sm"
                 className="relative border-none"
               >
-                Public beta is starting next week
+{betaBanner}
                 <ArrowRight className="ml-1" />
               </Button>
             </Link>
             <h1 className="font-weight-display text-2xl leading-snug tracking-tighter md:text-3xl lg:text-5xl">
-              Fast, flexible, and{' '}
-              <span className="block">developer-first CMS.</span>
+              {title}
             </h1>
             <p className="text-muted-foreground mx-auto max-w-[700px] text-sm leading-relaxed md:text-lg lg:text-xl">
-              Scalar CMS gives you full control over content with a streamlined,
-              API-first experience—perfect for teams who want speed without
-              sacrificing flexibility.
+              {description}
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <Button asChild>
-              <Link href="#">Start Free Trial</Link>
+              <LocalizedLink href="/signup">{startTrial}</LocalizedLink>
             </Button>
             <Button asChild variant="outline">
-              <Link href="#">
+              <Link href="https://discord.gg/scalar" target="_blank" rel="noopener noreferrer">
                 <FaDiscord className="size-5" />
-                Community
+                {community}
               </Link>
             </Button>
           </div>
@@ -91,7 +97,7 @@ export function Hero() {
         <div className="bordered-div-padding flex items-center justify-center border">
           <Image
             src="/images/landing/hero.webp"
-            alt="Hero Image"
+            alt={imageAlt}
             width={1320}
             height={743}
             priority

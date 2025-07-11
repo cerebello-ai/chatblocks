@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Scalar - Modern Next.js Template",
+    "description": "A modern, fully featured Next.js template built with Shadcn/UI, TailwindCSS and TypeScript, perfect for your next web application."
+  },
+  "hero": {
+    "betaBanner": "Public beta is starting next week",
+    "title": "Fast, flexible, and developer-first CMS.",
+    "description": "Scalar CMS gives you full control over content with a streamlined, API-first experience—perfect for teams who want speed without sacrificing flexibility.",
+    "startTrial": "Start Free Trial",
+    "community": "Community",
+    "imageAlt": "Hero Image"
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything you need to build amazing content experiences",
+    "items": [
+      {
+        "title": "Schema\nBuilder",
+        "description": "Design content structures your way.",
+        "subDescription": "Scalar CMS gives you full control over content with a streamlined, API-first experience — perfect for teams who want speed without sacrificing flexibility.",
+        "imageAlt": "Schema Builder"
+      },
+      {
+        "title": "Real Time Collaboration",
+        "description": "Built for content teams.",
+        "subDescription": "Draft, review, and publish content with confidence. Autosave, rich text editing, role-based permissions, and revision history come standard.",
+        "imageAlt": "Real Time Collaboration"
+      },
+      {
+        "title": "Customization",
+        "description": "Tailor everything to your needs.",
+        "subDescription": "Flexible configuration options to match your workflow.",
+        "imageAlt": "Customization Options"
+      },
+      {
+        "title": "Media\nLibrary",
+        "description": "Organize and manage your assets.",
+        "subDescription": "Powerful media management with advanced search and organization features.",
+        "imageAlt": "Media Library"
+      }
+    ]
+  },
+  "compatibility": {
+    "title": "Compatibility",
+    "subtitle": "Works out of the box with:",
+    "description": "Scalar integrates seamlessly with your existing tech stack"
+  },
+  "testimonials": {
+    "title": "Trusted by Fast-Moving Teams",
+    "subtitle": "See what our users are saying",
+    "items": [
+      {
+        "content": "Scalar has revolutionized how we manage content. The API-first approach gives us complete flexibility.",
+        "author": "Sarah Chen",
+        "role": "CTO at TechCorp",
+        "avatar": "/images/testimonials/sarah.jpg"
+      },
+      {
+        "content": "The developer experience is incredible. We can build and deploy content faster than ever before.",
+        "author": "Michael Rodriguez",
+        "role": "Lead Developer at StartupXYZ",
+        "avatar": "/images/testimonials/michael.jpg"
+      },
+      {
+        "content": "Best CMS we've used. The collaboration features are game-changing for our content team.",
+        "author": "Emma Thompson",
+        "role": "Content Manager at MediaCo",
+        "avatar": "/images/testimonials/emma.jpg"
+      }
+    ]
+  }
+}

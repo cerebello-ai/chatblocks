@@ -1,0 +1,54 @@
+{
+  "product": {
+    "title": "Product",
+    "cms": {
+      "title": "CMS",
+      "visualEditor": {
+        "title": "Visual Content Editor",
+        "description": "Rich text, media, and structured field editing"
+      },
+      "collaboration": {
+        "title": "Real-time Collaboration",
+        "description": "Commenting, presence, autosave, versioning"
+      }
+    },
+    "developerTools": {
+      "title": "Developer Tools",
+      "apis": {
+        "title": "GraphQL & REST APIs",
+        "description": "Auto-generated, blazing fast, type-safe APIs"
+      },
+      "localDev": {
+        "title": "Local Development",
+        "description": "Run Scalar locally with npx scalar dev"
+      },
+      "codeFirst": {
+        "title": "Code-first Models",
+        "description": "Define models in code, sync to the UI"
+      }
+    },
+    "integrations": {
+      "title": "Integrations",
+      "frameworks": {
+        "title": "Next.js, Astro, etc.",
+        "description": "First-class support for popular frameworks"
+      }
+    }
+  },
+  "company": {
+    "title": "Company",
+    "about": "About",
+    "roadmap": "Roadmap",
+    "blog": "Blog"
+  },
+  "support": {
+    "title": "Support",
+    "contact": "Contact",
+    "faq": "FAQs"
+  },
+  "actions": {
+    "login": "Log In",
+    "signup": "Start Free Trial",
+    "github": "GitHub"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Scalar - Plantilla Moderna de Next.js",
+    "description": "Una plantilla moderna y completa de Next.js construida con Shadcn/UI, TailwindCSS y TypeScript, perfecta para tu próxima aplicación web."
+  },
+  "hero": {
+    "betaBanner": "La beta pública comienza la próxima semana",
+    "title": "CMS rápido, flexible y orientado a desarrolladores.",
+    "description": "Scalar CMS te brinda control total sobre el contenido con una experiencia optimizada y centrada en API, perfecta para equipos que buscan velocidad sin sacrificar flexibilidad.",
+    "startTrial": "Iniciar Prueba Gratuita",
+    "community": "Comunidad",
+    "imageAlt": "Imagen Principal"
+  },
+  "features": {
+    "title": "Características",
+    "subtitle": "Todo lo que necesitas para crear experiencias de contenido increíbles",
+    "items": [
+      {
+        "title": "Constructor\nde Esquemas",
+        "description": "Diseña estructuras de contenido a tu manera.",
+        "subDescription": "Scalar CMS te da control total sobre el contenido con una experiencia optimizada y centrada en API, perfecta para equipos que buscan velocidad sin sacrificar flexibilidad.",
+        "imageAlt": "Constructor de Esquemas"
+      },
+      {
+        "title": "Colaboración en Tiempo Real",
+        "description": "Construido para equipos de contenido.",
+        "subDescription": "Redacta, revisa y publica contenido con confianza. Autoguardado, edición de texto enriquecido, permisos basados en roles e historial de revisiones vienen incluidos.",
+        "imageAlt": "Colaboración en Tiempo Real"
+      },
+      {
+        "title": "Personalización",
+        "description": "Adapta todo a tus necesidades.",
+        "subDescription": "Opciones de configuración flexibles para adaptarse a tu flujo de trabajo.",
+        "imageAlt": "Opciones de Personalización"
+      },
+      {
+        "title": "Biblioteca\nde Medios",
+        "description": "Organiza y gestiona tus recursos.",
+        "subDescription": "Gestión de medios potente con funciones avanzadas de búsqueda y organización.",
+        "imageAlt": "Biblioteca de Medios"
+      }
+    ]
+  },
+  "compatibility": {
+    "title": "Compatibilidad",
+    "subtitle": "Funciona sin configuración con:",
+    "description": "Scalar se integra perfectamente con tu stack tecnológico existente"
+  },
+  "testimonials": {
+    "title": "Confiado por Equipos Ágiles",
+    "subtitle": "Mira lo que dicen nuestros usuarios",
+    "items": [
+      {
+        "content": "Scalar ha revolucionado cómo manejamos el contenido. El enfoque API-first nos da flexibilidad completa.",
+        "author": "Sarah Chen",
+        "role": "CTO en TechCorp",
+        "avatar": "/images/testimonials/sarah.jpg"
+      },
+      {
+        "content": "La experiencia del desarrollador es increíble. Podemos construir y desplegar contenido más rápido que nunca.",
+        "author": "Michael Rodriguez",
+        "role": "Desarrollador Principal en StartupXYZ",
+        "avatar": "/images/testimonials/michael.jpg"
+      },
+      {
+        "content": "El mejor CMS que hemos usado. Las características de colaboración son revolucionarias para nuestro equipo de contenido.",
+        "author": "Emma Thompson",
+        "role": "Gerente de Contenido en MediaCo",
+        "avatar": "/images/testimonials/emma.jpg"
+      }
+    ]
+  }
+}

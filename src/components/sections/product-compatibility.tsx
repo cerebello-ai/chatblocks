@@ -18,10 +18,11 @@ import {
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { cn } from '@/lib/utils';
+import type { ProductCompatibilityProps } from '@/i18n/types';
 
-const frameworks = [
+const getFrameworks = (props: ProductCompatibilityProps) => [
   {
-    name: 'Model Definition',
+    name: props.tabs.modelDefinition,
     lang: 'typescript',
     code: `const Article = {
   name: 'Article',
@@ -35,7 +36,7 @@ const frameworks = [
 export default Article;`,
   },
   {
-    name: 'Form Component',
+    name: props.tabs.formComponent,
     lang: 'tsx',
     code: `import { useForm } from 'react-hook-form';
 
@@ -46,30 +47,30 @@ export function ArticleForm() {
     <form onSubmit={handleSubmit(onSubmit)}>
       <input 
         {...register('title', { required: true })}
-        placeholder="Article title"
+        placeholder="` + props.ui.articleTitle + `"
       />
       <textarea 
         {...register('content')}
-        placeholder="Article content"
+        placeholder="` + props.ui.articleContent + `"
       />
       <input 
         type="checkbox"
         {...register('featured')}
       />
-      <button type="submit">Save Article</button>
+      <button type="submit">` + props.ui.saveArticle + `</button>
     </form>
   );
 }`,
   },
   {
-    name: 'Article List',
+    name: props.tabs.articleList,
     lang: 'tsx',
     code: `import { useArticles } from '@/hooks/useArticles';
 
 export function ArticleList() {
   const { articles, loading } = useArticles();
   
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div>` + props.ui.loading + `</div>;
   
   return (
     <div className="article-list">
@@ -78,7 +79,7 @@ export function ArticleList() {
           <h3>{article.title}</h3>
           <p>{article.content}</p>
           {article.featured && (
-            <span className="featured-badge">Featured</span>
+            <span className="featured-badge">` + props.ui.featured + `</span>
           )}
         </div>
       ))}
@@ -87,22 +88,22 @@ export function ArticleList() {
 }`,
   },
   {
-    name: 'Single Article View',
+    name: props.tabs.singleArticleView,
     lang: 'tsx',
     code: `import { useArticle } from '@/hooks/useArticle';
 
 export function ArticleView({ id }: { id: string }) {
   const { article, loading } = useArticle(id);
   
-  if (loading) return <div>Loading...</div>;
-  if (!article) return <div>Article not found</div>;
+  if (loading) return <div>` + props.ui.loading + `</div>;
+  if (!article) return <div>` + props.ui.articleNotFound + `</div>;
   
   return (
     <article className="article-view">
       <header>
         <h1>{article.title}</h1>
         {article.featured && (
-          <span className="featured">Featured Article</span>
+          <span className="featured">` + props.ui.featuredArticle + `</span>
         )}
       </header>
       <div className="content">
@@ -113,7 +114,7 @@ export function ArticleView({ id }: { id: string }) {
 }`,
   },
   {
-    name: 'API Routes',
+    name: props.tabs.apiRoutes,
     lang: 'typescript',
     code: `// app/api/articles/route.ts
 import { NextRequest, NextResponse } from 'next/server';
@@ -140,7 +141,7 @@ export async function POST(request: NextRequest) {
 }`,
   },
   {
-    name: 'Data Fetching',
+    name: props.tabs.dataFetching,
     lang: 'typescript',
     code: `// hooks/useArticles.ts
 import { useState, useEffect } from 'react';
@@ -156,7 +157,7 @@ export function useArticles() {
         const data = await response.json();
         setArticles(data);
       } catch (error) {
-        console.error('Failed to fetch articles:', error);
+        console.error('` + props.ui.failedToFetch + `', error);
       } finally {
         setLoading(false);
       }
@@ -170,7 +171,8 @@ export function useArticles() {
   },
 ];
 
-export function ProductCompatibility() {
+export function ProductCompatibility(props: ProductCompatibilityProps) {
+  const frameworks = getFrameworks(props);
   const [activeTab, setActiveTab] = useState(frameworks[0].name);
   const [highlightedCode, setHighlightedCode] = useState<{
     light: Record<string, string>;
@@ -234,7 +236,7 @@ export function ProductCompatibility() {
     }
 
     highlightCode();
-  }, []); // Remove theme dependency
+  }, [frameworks]); // Add frameworks dependency
 
   // Get the current highlighted code based on theme
   const currentHighlightedCode =
@@ -246,10 +248,10 @@ export function ProductCompatibility() {
         <div className="space-y-4">
           <h3 className="text-muted-foreground flex items-center gap-2 text-sm leading-snug font-medium md:text-base">
             <RefreshCw className="size-5" />
-            Real-time Sync
+            {props.title}
           </h3>
           <h2 className="text-foreground font-weight-display leading-snug md:text-xl">
-            Sync instantly to the UI
+            {props.description}
           </h2>
         </div>
 
@@ -284,7 +286,7 @@ export function ProductCompatibility() {
               <Card className="relative overflow-hidden !p-0">
                 <CardContent className="!p-0">
                   <div className="flex h-92 items-center justify-center">
-                    <div className="text-muted-foreground">Loading...</div>
+                    <div className="text-muted-foreground">{props.ui.loading}</div>
                   </div>
                 </CardContent>
               </Card>
@@ -307,6 +309,7 @@ export function ProductCompatibility() {
                         <CopyButton
                           text={framework.code}
                           className="absolute top-4 right-4"
+                          copyText={props.ui.copyCode}
                         />
                       </CardContent>
                     </Card>
@@ -323,9 +326,10 @@ export function ProductCompatibility() {
 interface CopyButtonProps {
   text: string;
   className?: string;
+  copyText: string;
 }
 
-function CopyButton({ text, className }: CopyButtonProps) {
+function CopyButton({ text, className, copyText }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout>(null);
 
@@ -352,7 +356,7 @@ function CopyButton({ text, className }: CopyButtonProps) {
 
   return (
     <Button
-      aria-label="Copy code"
+      aria-label={copyText}
       variant="outline"
       size="sm"
       onClick={handleCopy}

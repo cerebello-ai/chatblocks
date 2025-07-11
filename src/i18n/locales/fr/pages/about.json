@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "À propos de nous - Scalar",
+    "description": "Conçu pour les développeurs, soutenu par la communauté. Découvrez Scalar et notre mission de révolutionner la gestion de contenu."
+  },
+  "hero": {
+    "title": "Conçu pour les développeurs, Soutenu par la communauté",
+    "description": "Scalar est la plateforme de contenu ouverte qui met la vitesse, le contrôle et la liberté entre vos mains - sans sacrifier la collaboration ou l'évolutivité.",
+    "discordText": "Rejoindre notre Discord",
+    "githubText": "Étoiler sur GitHub"
+  },
+  "mission": {
+    "title": "Notre Mission",
+    "description": "Nous construisons l'avenir de la gestion de contenu",
+    "content": "Chez Scalar, nous croyons que la gestion de contenu devrait être rapide, flexible et conviviale pour les développeurs. Notre mission est de fournir aux équipes les outils dont elles ont besoin pour créer, gérer et faire évoluer le contenu sans compromettre la vitesse ou la flexibilité.",
+    "values": [
+      {
+        "title": "Développeur d'abord",
+        "description": "Conçu avec les développeurs à l'esprit, avec des API et des flux de travail modernes."
+      },
+      {
+        "title": "Open Source",
+        "description": "Développement transparent et piloté par la communauté avec l'open source au cœur."
+      },
+      {
+        "title": "Performance",
+        "description": "Expériences de livraison et de gestion de contenu ultra-rapides."
+      },
+      {
+        "title": "Flexibilité",
+        "description": "S'adapte à vos besoins spécifiques et à votre flux de travail."
+      }
+    ]
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "description": "Rencontrez les personnes qui construisent l'avenir de la gestion de contenu",
+    "hiring": "Nous recrutons !",
+    "members": [
+      {
+        "name": "Alex Johnson",
+        "role": "Fondateur & CEO",
+        "bio": "Passionné par la création d'outils qui permettent aux développeurs de construire de meilleures expériences.",
+        "avatar": "/images/team/alex.jpg"
+      },
+      {
+        "name": "Sarah Kim",
+        "role": "CTO",
+        "bio": "Experte en architecture évolutive et en systèmes distribués.",
+        "avatar": "/images/team/sarah.jpg"
+      },
+      {
+        "name": "David Chen",
+        "role": "Développeur principal",
+        "bio": "Spécialisé dans l'expérience développeur et les outils de performance.",
+        "avatar": "/images/team/david.jpg"
+      }
+    ]
+  },
+  "investors": {
+    "title": "Nos Investisseurs",
+    "description": "Soutenus par les leaders de l'industrie",
+    "content": "Nous sommes fiers d'être soutenus par des investisseurs visionnaires qui croient en notre mission de révolutionner la gestion de contenu."
+  },
+  "testimonials": {
+    "title": "Ce que disent nos utilisateurs",
+    "subtitle": "Témoignages de nos utilisateurs satisfaits",
+    "items": [
+      {
+        "content": "Scalar a transformé notre flux de travail de contenu. L'expérience développeur est exceptionnelle.",
+        "author": "Marie Dubois",
+        "role": "Développeuse principale",
+        "avatar": "/images/testimonials/marie.jpg"
+      },
+      {
+        "content": "Enfin un CMS qui comprend les besoins des développeurs modernes.",
+        "author": "Pierre Martin",
+        "role": "Architecte technique",
+        "avatar": "/images/testimonials/pierre.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "title": "Produit - Scalar",
+    "description": "Découvrez l'approche code-first de Scalar pour la gestion de contenu. Définissez les modèles en code, synchronisez avec l'interface utilisateur de manière transparente."
+  },
+  "hero": {
+    "title": "Modèles code-first",
+    "description": "Définissez les modèles en code. Synchronisez-les de manière transparente avec l'interface utilisateur de Scalar.",
+    "startTrial": "Commencer l'essai gratuit",
+    "viewGithub": "Voir sur GitHub",
+    "imageAlt": "Interface des modèles code-first"
+  },
+  "features": {
+    "trackChanges": {
+      "title": "Suivre les modifications",
+      "description": "Intégration GitHub",
+      "subDescription": "La synchronisation GitHub de Scalar vous permet de suivre les modifications de modèles comme n'importe quel autre code. Collaborez sur les modifications de schéma comme sur les fonctionnalités ou les corrections."
+    },
+    "localDevelopment": {
+      "title": "Développement local",
+      "description": "Développez localement. Déployez globalement",
+      "subDescription": "Avec npx scalar dev, votre environnement local devient le centre de contrôle. Travaillez hors ligne, itérez rapidement et déployez quand vous êtes prêt."
+    },
+    "modelDefinitions": {
+      "title": "Définitions de modèles",
+      "description": "Définissez une fois, utilisez partout le contenu",
+      "subDescription": "Écrivez une fois en code. Scalar le reflète dans le panneau d'administration immédiatement."
+    },
+    "readyToScale": {
+      "title": "Prêt à évoluer",
+      "description": "Code-first, mais jamais code-only",
+      "subDescription": "Vos coéquipiers peuvent toujours utiliser l'interface utilisateur visuelle. Scalar permet aux développeurs de coder et aux non-développeurs de gérer le contenu avec la même facilité."
+    }
+  },
+  "compatibility": {
+    "title": "Synchronisation en temps réel",
+    "description": "Synchronisez instantanément avec l'interface utilisateur",
+    "tabs": {
+      "modelDefinition": "Définition du modèle",
+      "formComponent": "Composant de formulaire",
+      "articleList": "Liste d'articles",
+      "singleArticleView": "Vue d'article unique",
+      "apiRoutes": "Routes API",
+      "dataFetching": "Récupération de données"
+    },
+    "ui": {
+      "loading": "Chargement...",
+      "copyCode": "Copier le code",
+      "articleTitle": "Titre de l'article",
+      "articleContent": "Contenu de l'article",
+      "saveArticle": "Enregistrer l'article",
+      "featured": "En vedette",
+      "articleNotFound": "Article non trouvé",
+      "featuredArticle": "Article en vedette",
+      "failedToFetch": "Échec de la récupération des articles :"
+    }
+  },
+  "cta": {
+    "title": "Commencez à construire avec les modèles code-first",
+    "readDocs": "Lire la documentation"
+  }
+}
