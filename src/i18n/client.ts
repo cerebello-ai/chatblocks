@@ -30,7 +30,7 @@ i18next
     lng: getLocaleFromPath(),
     fallbackLng: 'en',
     debug: false,
-    ns: ['hero', 'navigation', 'features', 'testimonials', 'compatibility', 'about', 'contact', 'blog', 'product', 'common', 'metadata'],
+    ns: ['hero', 'navigation', 'common'],
     defaultNS: 'common',
     interpolation: {
       escapeValue: false,
